@@ -1,27 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Resume - HackLikeHer™</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Resume - Tiya Nelson</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background-color: #0d0d0d; color: #fff; }
+header { background: #000; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { color: #fff; text-decoration: none; position: relative; }
+nav a::after { content: ""; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #00bcd4; transition: 0.3s; }
+nav a:hover::after { width: 100%; }
+section { padding: 8rem 2rem 4rem; text-align: center; }
+.resume-container { display: flex; justify-content: center; }
+.resume-container iframe { width: 80%; height: 90vh; border: none; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
+.download-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #00bcd4; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; }
+.download-btn:hover { background: #008c9e; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>HackLikeHer™ Resume</h1>
+<header>
+    <div class="logo">TIYA NELSON</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <h2>Download Resume</h2>
-    <p><a href="assets/resume.pdf" download>Click here to download my resume</a></p>
-    <h2>Capstone Description</h2>
-    <p>My capstone project focuses on secure cloud application development, integrating DevSecOps, CI/CD pipelines, and red team simulation environments.</p>
-  </main>
-  <footer>
-    <p>© 2025 HackLikeHer™</p>
-  </footer>
+</header>
+
+<section>
+    <h2>My Resume</h2>
+    <div class="resume-container">
+        <iframe src="TiyaNelsonResume2025.pdf"></iframe>
+    </div>
+    <a href="TiyaNelsonResume2025.pdf" download class="download-btn">Download Resume</a>
+</section>
+
 </body>
 </html>
