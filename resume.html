@@ -18,6 +18,8 @@ section { padding: 8rem 2rem 4rem; text-align: center; }
 .resume-container iframe { width: 80%; height: 90vh; border: none; box-shadow: 0 0 20px rgba(0,0,0,0.5); }
 .download-btn { display: inline-block; margin-top: 20px; padding: 10px 20px; background: #00bcd4; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; }
 .download-btn:hover { background: #008c9e; }
+/* No-fade image style */
+.resume-image { width: 250px; height: 250px; border-radius: 50%; object-fit: cover; border: 5px solid #00bcd4; margin-bottom: 1.5rem; opacity: 1 !important; }
 </style>
 </head>
 <body>
@@ -28,13 +30,15 @@ section { padding: 8rem 2rem 4rem; text-align: center; }
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <section>
     <h2>My Resume</h2>
+    <!-- Optional portrait image -->
+    <!-- <img src="TiyaNelsonPic.jpg" alt="Tiya Nelson" class="resume-image"> -->
     <div class="resume-container">
         <iframe src="TiyaNelsonResume2025.pdf"></iframe>
     </div>
