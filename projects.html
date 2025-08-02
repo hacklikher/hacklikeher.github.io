@@ -13,11 +13,12 @@ nav ul { list-style: none; display: flex; gap: 1.5rem; }
 nav a { color: #fff; text-decoration: none; position: relative; }
 nav a::after { content: ""; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #00bcd4; transition: 0.3s; }
 nav a:hover::after { width: 100%; }
-section { padding: 8rem 2rem 4rem; text-align: center; max-width: 900px; margin: auto; }
+section { padding: 8rem 2rem 4rem; text-align: center; max-width: 1000px; margin: auto; }
 .project-card { background: #111; padding: 2rem; margin: 2rem 0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
-.project-card h3 { color: #00bcd4; margin-bottom: 1rem; }
-.project-card p { font-size: 1.1rem; line-height: 1.6; }
-.project-links a { display: inline-block; margin: 1rem; padding: 10px 20px; background: #00bcd4; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; }
+.project-card h3 { color: #00bcd4; margin-bottom: 1rem; font-size: 1.5rem; }
+.project-card p { font-size: 1.1rem; line-height: 1.6; margin-bottom: 1rem; }
+.coming-soon { background: #222; padding: 2rem; border-radius: 8px; font-size: 1.2rem; font-weight: bold; color: #00bcd4; margin-bottom: 1rem; }
+.project-links a { display: inline-block; margin: 0.5rem; padding: 10px 20px; background: #00bcd4; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; }
 .project-links a:hover { background: #008c9e; }
 </style>
 </head>
@@ -29,7 +30,7 @@ section { padding: 8rem 2rem 4rem; text-align: center; max-width: 900px; margin:
             <li><a href="index.html">Home</a></li>
             <li><a href="resume.html">Resume</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -38,11 +39,14 @@ section { padding: 8rem 2rem 4rem; text-align: center; max-width: 900px; margin:
     <h2>Projects</h2>
     <div class="project-card">
         <h3>HackLikeHer <span style="font-size:0.8rem; color:#aaa;">(Coming Soon)</span></h3>
+        <div class="coming-soon">🎥 Video Content Coming Soon</div>
         <p>
-            HackLikeHer is my flagship project where I will host live sessions on Twitch to explore ethical hacking and cybersecurity. Content will include hacking into Hack The Box machines, discussing cybersecurity policies, interviewing experts in the cybersecurity and tech industries, and demonstrating the safe and legal use of hacking tools such as the Flipper Zero. All activities are for educational purposes only and never for illegal actions.
+            HackLikeHer is my flagship project where I will host live Twitch sessions exploring ethical hacking and cybersecurity. 
+            Content will include Hack The Box walkthroughs, discussions on cybersecurity policies, interviews with experts in tech and cybersecurity, 
+            and safe demonstrations of tools like the Flipper Zero. All content is for educational purposes only and never for illegal activities.
         </p>
         <p>
-            Following each session, videos will be uploaded to YouTube, and write-ups for the challenges will be published on my GitHub.
+            Recorded sessions will be uploaded to YouTube, and write-ups for challenges will be published on my GitHub.
         </p>
         <div class="project-links">
             <a href="#" target="_blank">Twitch (Coming Soon)</a>
