@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>HackLikeHer™ Projects</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects - Tiya Nelson</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; background-color: #0d0d0d; color: #fff; }
+header { background: #000; padding: 1rem 2rem; position: fixed; width: 100%; top: 0; display: flex; justify-content: space-between; align-items: center; z-index: 1000; }
+nav ul { list-style: none; display: flex; gap: 1.5rem; }
+nav a { color: #fff; text-decoration: none; position: relative; }
+nav a::after { content: ""; position: absolute; width: 0; height: 2px; bottom: -4px; left: 0; background-color: #00bcd4; transition: 0.3s; }
+nav a:hover::after { width: 100%; }
+section { padding: 8rem 2rem 4rem; text-align: center; max-width: 900px; margin: auto; }
+.project-card { background: #111; padding: 2rem; margin: 2rem 0; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.5); }
+.project-card h3 { color: #00bcd4; margin-bottom: 1rem; }
+.project-card p { font-size: 1.1rem; line-height: 1.6; }
+.project-links a { display: inline-block; margin: 1rem; padding: 10px 20px; background: #00bcd4; color: #000; font-weight: bold; border-radius: 5px; text-decoration: none; }
+.project-links a:hover { background: #008c9e; }
+</style>
 </head>
 <body>
-  <header>
-    <h1>HackLikeHer™ Projects</h1>
+<header>
+    <div class="logo">TIYA NELSON</div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="projects.html">Projects</a>
-      <a href="resume.html">Resume</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  <main>
-    <h2>Coming Soon</h2>
-    <p>Hack The Box walkthroughs and tutorials will be posted here.</p>
-  </main>
-  <footer>
-    <p>© 2025 HackLikeHer™</p>
-  </footer>
+</header>
+
+<section>
+    <h2>Projects</h2>
+    <div class="project-card">
+        <h3>HackLikeHer <span style="font-size:0.8rem; color:#aaa;">(Coming Soon)</span></h3>
+        <p>
+            HackLikeHer is my flagship project where I will host live sessions on Twitch to explore ethical hacking and cybersecurity. Content will include hacking into Hack The Box machines, discussing cybersecurity policies, interviewing experts in the cybersecurity and tech industries, and demonstrating the safe and legal use of hacking tools such as the Flipper Zero. All activities are for educational purposes only and never for illegal actions.
+        </p>
+        <p>
+            Following each session, videos will be uploaded to YouTube, and write-ups for the challenges will be published on my GitHub.
+        </p>
+        <div class="project-links">
+            <a href="#" target="_blank">Twitch (Coming Soon)</a>
+            <a href="#" target="_blank">YouTube (Coming Soon)</a>
+            <a href="https://github.com/hacklikher" target="_blank">GitHub</a>
+        </div>
+    </div>
+</section>
+
 </body>
 </html>
